@@ -1,17 +1,6 @@
 import numpy as np 
 import pandas as pd 
 
-def return_class_tflite ( image: np.ndarray, detections: list) : # For tflite 
-  result_text = []
-  for detection in detections:
-    # Draw label and score
-    category = detection.categories[0]
-    probability = round(category.score, 2)
-    class_num = category.label
-    text = class_num + ' (' + str(probability) + ')'
-    result_text.append(text)
-  return result_text
-
 def return_class_yolo(): # Return list o string for predictions 
     pred = []
     import os 
