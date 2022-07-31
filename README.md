@@ -11,7 +11,20 @@ Link websites access :
   - Yolo model with Pytorch : https://foodexv1.azurewebsites.net/upload-photo
   
   
-----------------------------
+--------------- Run app.py with yolo detection -------------
+
+Command : git clone https://github.com/subut0n/FruitDetection
+
+Command : cd FruitDetection 
+
+Command : git branch develop_ayoub
+
+Command : pip install -r requirements.txt 
+
+Command :  python app.py
+
+
+---------------Docker option with yolo detection : -------------
 
 For now if you want to use webcam real time mode, you need to deploy it in local  
 
@@ -20,6 +33,8 @@ Please follow this following instructions :
 Command : git clone https://github.com/subut0n/FruitDetection
 
 Command : cd FruitDetection 
+
+Command : git branch develop_ayoub
 
 Command : docker build --tag foodex .
 
